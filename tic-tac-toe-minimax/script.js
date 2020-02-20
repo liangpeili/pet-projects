@@ -19,7 +19,6 @@ const cells = document.getElementsByClassName('cell');
 onStartGame();
 
 function onStartGame() {
-  document.querySelector('.end-game').style.display = 'none';
   origBoard = Array.from(Array(9).keys());
   for (let i = 0; i < cells.length; i++) {
     cells[i].innerText = '';
@@ -48,7 +47,6 @@ function onTurn(squareId, player) {
   origBoard[squareId] = player;
   document.getElementById(squareId).innerText = player;
   let isGameWon = onCheckWin(origBoard, player);
-  // console.log(isGameWon)
   if (isGameWon) {
     onGameOver(isGameWon);
   }
@@ -88,9 +86,9 @@ function onGameOver({
 }
 
 function onDeclareWinner(who) {
-  // console.log('Result: ', who);
-  document.querySelector('.end-game').style.display = 'block';
-  document.querySelector('.end-game .text').innerText = `结果: ${who}`;
+  alert(`结果: ${who}`);
+  onStartGame();
+
 }
 
 function onCheckGameTie() {
