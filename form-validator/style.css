@@ -1,80 +1,90 @@
 @import url('https://fonts.font.im/css?family=Open+Sans');
 
+:root {
+  --success-color: #23cc71;
+  --error-color: #e74c3c;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: azure;
+  background-color: #f9fafb;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: 'Open Sans';
+  margin: 0;
 }
 
 .container {
   background-color: #fff;
   box-shadow: 0 2px 5px #888888;
   border-radius: 5px;
-  height: 600px;
   width: 400px;
-  padding: 30px;
 }
 
 h2 {
   text-align: center;
+  margin: 0 0 20px;
 }
 
-label {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  color: gray;
+.form {
+  padding: 30px 40px;
 }
 
 .form-control {
-  margin-bottom: 20px;
-  /* padding-bottom: 10px; */
-  width: 100%
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-input {
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.form-control input {
+  display: block;
   outline: 0;
   padding: 5px;
   width: 100%;
   border-radius: 3px;
-  height: 40px;
-  border: 0.5px solid gainsboro;
+  border: 2px solid gainsboro;
+  font-size: 14px;
 }
 
-input:focus {
+.form-control input:focus {
   border-color: lightblue;
 }
 
-input.error {
-  border-color: red;
+.form-control.success input {
+  border-color: var(--success-color);
 }
 
-input.success {
-  border-color: green;
+.form-control.error input {
+  border-color: var(--error-color);
 }
 
-small {
-  color: red;
+.form-control small {
+  color: var(--error-color);
   visibility: hidden;
 }
 
-small.error {
+.form-control.error small {
   visibility: visible;
 }
 
 button {
+  display: block;
+  cursor: pointer;
   width: 100%;
   background-color: cornflowerblue;
   color: white;
-  border: 0;
-  height: 50px;
+  border: 2px solid cornflowerblue;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 20px;
 }
