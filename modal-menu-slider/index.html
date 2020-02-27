@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>My Landing Page</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user">
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <button id="toggle" class="toggle">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+
+    <h1>My Landing Page</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam</p>
+
+    <button class="cta-btn" id="open">Sign Up</button>
+  </header>
+
+  <div class="container">
+    <h2>What is this landing page about?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id libero ultricies, porta orci et, congue lorem
+    </p>
+    <p>Ut a porta ante. Donec sit amet odio mauris. Fusce at tortor fermentum, elementum risus id, fringilla lectus.
+      Morbi magna nibh, porttitor accumsan egestas in, varius sit amet metus. </p>
+
+    <h2>Tell Me More</h2>
+    <p>Nullam sodales mauris in dapibus vehicula. Proin nec viverra eros, sit amet mattis sapien. Quisque in magna nec
+      purus molestie scelerisque. Mauris sed lorem et ligula dignissim porttitor in aliquam urna. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Nulla facilisi. Maecenas ut lacus molestie, euismod odio maximus, laoreet nunc.
+    </p>
+
+    <h2>Benefits</h2>
+    <ul>
+      <li>Lifetime access</li>
+      <li>30 Day Money back</li>
+      <li>Tailored Customer Support</li>
+    </ul>
+    <p>
+      Donec nec nisl eget diam sodales iaculis. Cras sed enim nec tellus faucibus venenatis. Pellentesque non nibh
+      tincidunt, egestas lacus finibus, vehicula nibh. Nullam sem nunc, consectetur a nulla eu, bibendum tempor turpis.
+      Integer ac lorem magna. Donec nisi mi, sollicitudin fringilla iaculis ac, finibus vel diam. Nunc convallis
+      faucibus ultricies. Praesent ipsum nisi, vulputate ut varius in, rhoncus at arcu. Praesent neque mauris, consequat
+      in molestie sagittis, congue vel eros. Ut velit lacus, rhoncus eu odio at, finibus semper nisi. Fusce nec mauris
+      id diam vestibulum iaculis. Donec feugiat enim ut urna semper varius. Mauris tincidunt consequat nisi, maximus
+      lobortis velit porttitor sit amet.
+    </p>
+  </div>
+
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>Sign Up</h3>
+      </div>
+      <div class="modal-content">
+        <p>Register with us to get offers, support and more</p>
+        <form class="modal-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter name" class="form-input">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" class="form-input">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" class="form-input">
+          </div>
+          <div>
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm password" class="form-input">
+          </div>
+          <input type="submit" value="Submit" class="submit-btn">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
